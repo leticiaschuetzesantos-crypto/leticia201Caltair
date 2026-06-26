@@ -1,29 +1,176 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Página com Vídeo</title>
+    <title>O Império Kardashian-Jenner</title>
     <style>
+        /* Estilo Geral */
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
             color: #333;
-            text-align: center;
+            line-height: 1.6;
         }
-        .video-container {
+
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Seção de Introdução */
+        .intro {
+            text-align: center;
+            padding: 40px 0 20px 0;
+        }
+
+        .intro h2 {
+            font-size: 2.5rem;
+            color: #1a1a1a;
+        }
+
+        /* Container do Vídeo Responsivo */
+        .video-section {
+            text-align: center;
             margin: 30px auto;
-            max-width: 100%;
+            max-width: 700px; /* Limita a largura máxima do vídeo para não quebrar o layout */
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            padding-top: 30px; 
+            height: 0; 
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            border-radius: 8px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Grid da Família */
+        .family-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 50px;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #d4af37; /* Tom dourado */
+        }
+
+        .tag {
+            display: inline-block;
+            background: #eee;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            border-radius: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            font-size: 0.9rem;
+            color: #777;
         }
     </style>
 </head>
 <body>
 
-    <h1>Confira o Vídeo Abaixo</h1>
-    <p>Aqui está o conteúdo do YouTube integrado diretamente na página:</p>
+    <header>
+        <h1>Kardashian Empire</h1>
+    </header>
 
-    <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/Nhd9sqBgbqE?si=cS4i8y4H_PcYeWmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="container">
+        <section class="intro">
+            <h2>A Dinastia do Entretenimento</h2>
+            <p>De um reality show em 2007 a um império multibilionário, a família Kardashian-Jenner redefiniu a cultura pop, as redes sociais e o mundo dos negócios no século XXI.</p>
+        </section>
+
+        <section class="video-section">
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Nhd9sqBgbqE?si=cS4i8y4H_PcYeWmg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <div class="family-grid">
+            <div class="card">
+                <span class="tag">Matriarca / Momager</span>
+                <h3>Kris Jenner</h3>
+                <p>A mente estratégica por trás do sucesso global de todos os seus filhos.</p>
+            </div>
+
+            <div class="card">
+                <span class="tag">Empresária / SKIMS</span>
+                <h3>Kim Kardashian</h3>
+                <p>Ícone da moda e futura advogada, transformou a fama em um império bilionário.</p>
+            </div>
+
+            <div class="card">
+                <span class="tag">Lifestyle / Lemme</span>
+                <h3>Kourtney Kardashian</h3>
+                <p>Focada em bem-estar e vida natural através de sua marca Lemme e Poosh.</p>
+            </div>
+
+            <div class="card">
+                <span class="tag">Good American</span>
+                <h3>Khloé Kardashian</h3>
+                <p>Conhecida por sua personalidade forte e pela marca de jeans inclusiva Good American.</p>
+            </div>
+
+            <div class="card">
+                <span class="tag">Supermodelo / 818 Tequila</span>
+                <h3>Kendall Jenner</h3>
+                <p>Uma das modelos mais bem pagas do mundo e fundadora da 818 Tequila.</p>
+            </div>
+
+            <div class="card">
+                <span class="tag">Kylie Cosmetics</span>
+                <h3>Kylie Jenner</h3>
+                <p>Fenômeno das redes sociais e fundadora da gigante Kylie Cosmetics.</p>
+            </div>
+        </div>
     </div>
-    <p>Se precisar
+
+    <footer>
+        <p>&copy; 2026 - Fan Page Inspiracional Kardashian-Jenner</p>
+    </footer>
+
+</body>
+</html>
