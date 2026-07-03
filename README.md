@@ -1,6 +1,4 @@
-import os
-
-readme_content = """# 👑 O Império Kardashian-Jenner — Website Informativo
+# 👑 O Império Kardashian-Jenner — Website Informativo
 
 Este projeto é uma aplicação web interativa e elegante dedicada a explorar a trajetória, os negócios multimilionários e o impacto cultural de uma das famílias mais influentes do século XXI: o clã Kardashian-Jenner. 
 
@@ -32,3 +30,15 @@ O projeto foi desenvolvido utilizando tecnologias web nativas, sem a necessidade
 
 ## 📁 Estrutura dos Arquivos
 A organização do repositório segue as boas práticas de desenvolvimento de páginas únicas (*Single Page Applications* estruturais):
+
+```text
+imperio-kardashian/
+│
+├── index.html          # Arquivo principal com a estrutura semântica da página
+├── README.md           # Documentação completa do projeto (este arquivo)
+│
+├── css/
+│   └── styles.css      # Folha de estilo contendo a identidade visual e o layout responsivo
+│
+└── js/
+    └── main.js         # Scripts para controle de interações e comportamento dinâmico
